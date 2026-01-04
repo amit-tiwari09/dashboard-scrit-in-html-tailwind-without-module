@@ -1,0 +1,70 @@
+/**
+ * ---------------------------------------------------------------------
+ * Global Styles & Animations
+ * ---------------------------------------------------------------------
+ * This file contains reusable animation keyframes
+ * and utility classes used throughout the UI.
+ * ---------------------------------------------------------------------
+ */
+
+/* ============================
+   Global Style for all element
+============================== */
+* {
+  box-sizing: border-box;
+}
+
+/* =======================================
+  Horizontal slide animation (left → right) 
+=========================================== */
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  50% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/* =============================================
+ Vertical slide-down animation (used for modals) 
+=============================================== */
+@keyframes slideDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* =============================================
+ Vertical slide-up animation (used for modals)
+=============================================== */
+@keyframes slideUp {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+/* ================= Utility Classes ===================== */
+.modal-enter {
+  animation: slideDown 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.modal-exit {
+  animation: slideUp 0.4s cubic-bezier(0.4, 0, 0.6, 1) forwards;
+}
