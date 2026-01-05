@@ -53,6 +53,60 @@
             </div>
 
 
+            <!--========== Medicine Submenu ===========-->
+            <div>
+                <button id="medicine"
+                    class="has-submenu w-full flex items-center justify-between px-4 py-3 text-sm font-medium text-gray-700 rounded-lg hover:bg-[#EEF2FF] transition-all">
+                    <div class="flex items-center gap-3 pointer-events-none">
+                        <img src="../../assets/svg/pill.svg" class="w-5 h-5 pointer-events-none">
+
+                        <span class="sidebar-text pointer-events-none">Medicine</span>
+                    </div>
+
+                    <img id="medicine-icon" src="../../assets/svg/cheveron-right.svg"
+                        class="sidebar-submenu-icon w-4 h-4 transition-transform duration-200 sidebar-text pointer-events-none">
+                </button>
+
+                <div id="medicine-submenu" class="hidden mt-1 ml-11 space-y-1 sidebar-submenu">
+                    <a href="../../pages/medicine/medicine-list.html" data-nav
+                        class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
+                        Medicine List
+                    </a>
+
+                    <a href="../../pages/medicine/upcoming-medicine.html" data-nav
+                        class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
+                        Upcoming Medicine
+                    </a>
+                </div>
+            </div>
+
+            <!--========== Billing Submenu ===========-->
+            <div>
+                <button id="billing"
+                    class="has-submenu w-full flex items-center justify-between px-4 py-3 text-sm font-medium text-gray-700 rounded-lg hover:bg-[#EEF2FF] transition-all">
+                    <div class="flex items-center gap-3 pointer-events-none">
+                        <img src="../../assets/svg/receipt.svg" class="w-5 h-5 pointer-events-none">
+
+                        <span class="sidebar-text pointer-events-none">Billing</span>
+                    </div>
+
+                    <img id="billing-icon" src="../../assets/svg/cheveron-right.svg"
+                        class="sidebar-submenu-icon w-4 h-4 transition-transform duration-200 sidebar-text pointer-events-none">
+                </button>
+
+                <div id="billing-submenu" class="hidden mt-1 ml-11 space-y-1 sidebar-submenu">
+                    <a href="../../pages/billing/medicine-sell.html" data-nav
+                        class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
+                        Medicine Sell
+                    </a>
+
+                    <a href="../../pages/billing/patients-bill.html" data-nav
+                        class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
+                        Patients Bill
+                    </a>
+                </div>
+            </div>
+
             <!--========== Doctors Submenu ===========-->
             <div>
                 <button id="doctors"
@@ -73,6 +127,14 @@
                     <a href="../doctors/specialist-doctor.html" data-nav
                         class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
                         specialist
+                    </a>
+                    <a href="../../pages/doctors/new-vacancy.html" data-nav
+                        class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
+                        New Vacancy
+                    </a>
+                    <a href="../../pages/doctors/applicants.html" data-nav
+                        class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
+                        Applicants
                     </a>
                 </div>
             </div>
@@ -183,34 +245,6 @@
 
                 </div>
             </div>
-
-            <!--========== Medicine Submenu ===========-->
-            <div>
-                <button id="medicine"
-                    class="has-submenu w-full flex items-center justify-between px-4 py-3 text-sm font-medium text-gray-700 rounded-lg hover:bg-[#EEF2FF] transition-all">
-                    <div class="flex items-center gap-3 pointer-events-none">
-                        <img src="../../assets/svg/pill.svg" class="w-5 h-5 pointer-events-none">
-
-                        <span class="sidebar-text pointer-events-none">Medicine</span>
-                    </div>
-
-                    <img id="medicine-icon" src="../../assets/svg/cheveron-right.svg"
-                        class="sidebar-submenu-icon w-4 h-4 transition-transform duration-200 sidebar-text pointer-events-none">
-                </button>
-
-                <div id="medicine-submenu" class="hidden mt-1 ml-11 space-y-1 sidebar-submenu">
-                    <a href="../../pages/medicine/medicine-list.html" data-nav
-                        class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
-                        Medicine List
-                    </a>
-
-                    <a href="../../pages/medicine/upcoming-medicine.html" data-nav
-                        class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
-                        Upcoming Medicine
-                    </a>
-                </div>
-            </div>
-
         </nav>
 
         <!-- Logout Button at Bottom -->
@@ -309,7 +343,7 @@
             <nav class="text-sm text-gray-500">
                 <ol class="list-reset flex">
                     <li>
-                        <a href="/index.html" class="text-blue-600 hover:text-blue-700 font-medium">Home</a>
+                        <a href="../../index.html" class="text-blue-600 hover:text-blue-700 font-medium">Home</a>
                     </li>
                     <li>
                         <span class="mx-2">/</span>

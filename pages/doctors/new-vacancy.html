@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Events</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <title>New Vacancy</title>
+    <link rel="stylesheet" href="../../css/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
@@ -25,14 +25,14 @@
             </a>
 
             <button class="toggle-sidebar p-2 text-gray-600 hover:bg-gray-50 rounded-lg transition-colors mr-4">
-                <img src="../assets/svg/menu.svg" class="min-w-6 min-h-6 pointer-events-none">
+                <img src="../../assets/svg/menu.svg" class="min-w-6 min-h-6 pointer-events-none">
             </button>
         </div>
 
         <!--========== Search Bar ===========-->
         <div id="search-bar" class="p-4">
             <div class="relative">
-                <img src="../assets/svg/magnifier.svg"
+                <img src="../../assets/svg/magnifier.svg"
                     class="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4" alt="">
                 <input type="text"
                     class="w-full pl-9 pr-3 py-2 text-sm text-gray-700 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
@@ -45,39 +45,38 @@
 
             <!--========== Home ===========-->
             <div>
-                <a href="../index.html"
+                <a href="../../index.html"
                     class="flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 rounded-lg hover:bg-[#EEF2FF] transition-colors">
-                    <img src="../assets/svg/home.svg" class="h-5 w-5 pointer-events-none">
+                    <img src="../../assets/svg/home.svg" class="h-5 w-5 pointer-events-none">
                     <span class="sidebar-text">Home</span>
                 </a>
             </div>
+
 
             <!--========== Medicine Submenu ===========-->
             <div>
                 <button id="medicine"
                     class="has-submenu w-full flex items-center justify-between px-4 py-3 text-sm font-medium text-gray-700 rounded-lg hover:bg-[#EEF2FF] transition-all">
                     <div class="flex items-center gap-3 pointer-events-none">
-                        <img src="../assets/svg/pill.svg" class="w-5 h-5 pointer-events-none">
+                        <img src="../../assets/svg/pill.svg" class="w-5 h-5 pointer-events-none">
 
                         <span class="sidebar-text pointer-events-none">Medicine</span>
                     </div>
 
-                    <img id="medicine-icon" src="../assets/svg/cheveron-right.svg"
+                    <img id="medicine-icon" src="../../assets/svg/cheveron-right.svg"
                         class="sidebar-submenu-icon w-4 h-4 transition-transform duration-200 sidebar-text pointer-events-none">
                 </button>
 
                 <div id="medicine-submenu" class="hidden mt-1 ml-11 space-y-1 sidebar-submenu">
-                    <a href="../pages/medicine/medicine-list.html" data-nav
+                    <a href="../../pages/medicine/medicine-list.html" data-nav
                         class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
                         Medicine List
                     </a>
 
-                    <a href="../pages/medicine/upcoming-medicine.html" data-nav
+                    <a href="../../pages/medicine/upcoming-medicine.html" data-nav
                         class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
                         Upcoming Medicine
                     </a>
-
-
                 </div>
             </div>
 
@@ -86,54 +85,55 @@
                 <button id="billing"
                     class="has-submenu w-full flex items-center justify-between px-4 py-3 text-sm font-medium text-gray-700 rounded-lg hover:bg-[#EEF2FF] transition-all">
                     <div class="flex items-center gap-3 pointer-events-none">
-                        <img src="../assets/svg/receipt.svg" class="w-5 h-5 pointer-events-none">
+                        <img src="../../assets/svg/receipt.svg" class="w-5 h-5 pointer-events-none">
 
                         <span class="sidebar-text pointer-events-none">Billing</span>
                     </div>
 
-                    <img id="billing-icon" src="../assets/svg/cheveron-right.svg"
+                    <img id="billing-icon" src="../../assets/svg/cheveron-right.svg"
                         class="sidebar-submenu-icon w-4 h-4 transition-transform duration-200 sidebar-text pointer-events-none">
                 </button>
 
                 <div id="billing-submenu" class="hidden mt-1 ml-11 space-y-1 sidebar-submenu">
-                    <a href="../pages/billing/medicine-sell.html" data-nav
+                    <a href="../../pages/billing/medicine-sell.html" data-nav
                         class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
                         Medicine Sell
                     </a>
 
-                    <a href="../pages/billing/patients-bill.html" data-nav
+                    <a href="../../pages/billing/patients-bill.html" data-nav
                         class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
                         Patients Bill
                     </a>
                 </div>
             </div>
 
+
             <!--========== Doctors Submenu ===========-->
             <div>
                 <button id="doctors"
                     class="has-submenu w-full flex items-center justify-between px-4 py-3 text-sm font-medium text-gray-700 rounded-lg hover:bg-[#EEF2FF] transition-all">
                     <div class="flex items-center gap-3 pointer-events-none">
-                        <img src="../assets/svg/stethoscope.svg" class="w-5 h-5 pointer-events-none">
+                        <img src="../../assets/svg/stethoscope.svg" class="w-5 h-5 pointer-events-none">
                         <span class="sidebar-text pointer-events-none">Doctors</span>
                     </div>
-                    <img id="doctors-icon" src="../assets/svg/cheveron-right.svg"
+                    <img id="doctors-icon" src="../../assets/svg/cheveron-right.svg"
                         class="sidebar-submenu-icon w-4 h-4 transition-transform duration-200 sidebar-text pointer-events-none">
                 </button>
 
                 <div id="doctors-submenu" class="hidden mt-1 ml-11 space-y-1 sidebar-submenu">
-                    <a href="../pages/doctors/core-doctors.html" data-nav
+                    <a href="../../pages/doctors/core-doctors.html" data-nav
                         class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
                         Core Doctors
                     </a>
-                    <a href="../pages/doctors/specialist-doctor.html" data-nav
+                    <a href="../../pages/doctors/specialist-doctor.html" data-nav
                         class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
                         specialist
                     </a>
-                    <a href="../pages/doctors/new-vacancy.html" data-nav
+                    <a href="../../pages/doctors/new-vacancy.html" data-nav
                         class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
                         New Vacancy
                     </a>
-                    <a href="../pages/doctors/applicants.html" data-nav
+                    <a href="../../pages/doctors/applicants.html" data-nav
                         class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
                         Applicants
                     </a>
@@ -142,18 +142,18 @@
 
             <!--========== Services ===========-->
             <div>
-                <a href="../pages/service.html" data-nav
+                <a href="../../pages/service.html" data-nav
                     class="flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 rounded-lg hover:bg-[#EEF2FF] transition-colors">
-                    <img src="../assets/svg/suitcase.svg" class="w-5 h-5 pointer-events-none">
+                    <img src="../../assets/svg/suitcase.svg" class="w-5 h-5 pointer-events-none">
                     <span class="sidebar-text">Services</span>
                 </a>
             </div>
 
             <!--========== Events ===========-->
             <div>
-                <a href="./event.html" data-nav
+                <a href="../../pages/event.html" data-nav
                     class="flex items-center gap-3 px-4 py-3 text-sm font-medium text-gray-700 rounded-lg hover:bg-[#EEF2FF] transition-colors">
-                    <img src="../assets/svg/calendar.svg" class="w-5 h-5 pointer-events-none">
+                    <img src="../../assets/svg/calendar.svg" class="w-5 h-5 pointer-events-none">
 
                     <span class="sidebar-text">Events</span>
                 </a>
@@ -164,19 +164,19 @@
                 <button id="patients"
                     class="has-submenu w-full flex items-center justify-between px-4 py-3 text-sm font-medium text-gray-700 rounded-lg hover:bg-[#EEF2FF] transition-all">
                     <div class="flex items-center gap-3 pointer-events-none">
-                        <img src="../assets/svg/user-group.svg" class="w-5 h-5 pointer-events-none">
+                        <img src="../../assets/svg/user-group.svg" class="w-5 h-5 pointer-events-none">
                         <span class="sidebar-text pointer-events-none">Patients</span>
                     </div>
-                    <img id="patients-icon" src="../assets/svg/cheveron-right.svg"
+                    <img id="patients-icon" src="../../assets/svg/cheveron-right.svg"
                         class="sidebar-submenu-icon w-4 h-4 transition-transform duration-200 sidebar-text pointer-events-none">
                 </button>
 
                 <div id="patients-submenu" class="hidden mt-1 ml-11 space-y-1 sidebar-submenu">
-                    <a href="../pages/patients/patient-list.html" data-nav
+                    <a href="../../pages/patients/patient-list.html" data-nav
                         class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
                         Patients List
                     </a>
-                    <a href="../pages/patients/patient-appoinment.html" data-nav
+                    <a href="../../pages/patients/patient-appoinment.html" data-nav
                         class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
                         Patients Appoinment
                     </a>
@@ -188,27 +188,27 @@
                 <button id="report"
                     class="has-submenu w-full flex items-center justify-between px-4 py-3 text-sm font-medium text-gray-700 rounded-lg hover:bg-[#EEF2FF] transition-all">
                     <div class="flex items-center gap-3 pointer-events-none">
-                        <img src="../assets/svg/file-text.svg" class="w-5 h-5 pointer-events-none">
+                        <img src="../../assets/svg/file-text.svg" class="w-5 h-5 pointer-events-none">
                         <span class="sidebar-text pointer-events-none">Report</span>
                     </div>
-                    <img id="report-icon" src="../assets/svg/cheveron-right.svg"
+                    <img id="report-icon" src="../../assets/svg/cheveron-right.svg"
                         class="sidebar-submenu-icon w-4 h-4 transition-transform duration-200 sidebar-text pointer-events-none">
                 </button>
 
                 <div id="report-submenu" class="hidden mt-1 ml-11 space-y-1 sidebar-submenu">
-                    <a href="../pages/reports/patient-report.html" data-nav
+                    <a href="../../pages/reports/patient-report.html" data-nav
                         class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
                         Patients Report
                     </a>
-                    <a href="../pages/reports/blood-test.html" data-nav
+                    <a href="../../pages/reports/blood-test.html" data-nav
                         class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
                         Blood Test
                     </a>
-                    <a href="../pages/reports/x-ray.html" data-nav
+                    <a href="../../pages/reports/x-ray.html" data-nav
                         class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
                         X-ray
                     </a>
-                    <a href="../pages/reports/full-health.html" data-nav
+                    <a href="../../pages/reports/full-health.html" data-nav
                         class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
                         Full Health
                     </a>
@@ -220,26 +220,26 @@
                 <button id="setting"
                     class="has-submenu w-full flex items-center justify-between px-4 py-3 text-sm font-medium text-gray-700 rounded-lg hover:bg-[#EEF2FF] transition-all">
                     <div class="flex items-center gap-3 pointer-events-none">
-                        <img src="../assets/svg/setting.svg" class="w-5 h-5 pointer-events-none">
+                        <img src="../../assets/svg/setting.svg" class="w-5 h-5 pointer-events-none">
 
                         <span class="sidebar-text pointer-events-none">Setting</span>
                     </div>
 
-                    <img id="setting-icon" src="../assets/svg/cheveron-right.svg"
+                    <img id="setting-icon" src="../../assets/svg/cheveron-right.svg"
                         class="sidebar-submenu-icon w-4 h-4 transition-transform duration-200 sidebar-text pointer-events-none">
                 </button>
 
                 <div id="setting-submenu" class="hidden mt-1 ml-11 space-y-1 sidebar-submenu">
-                    <a href="../pages/settings/app-menu.html" data-nav
+                    <a href="../../pages/settings/app-menu.html" data-nav
                         class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
                         App Menu
                     </a>
-                    <a href="../pages/settings/slider.html" data-nav
+                    <a href="../../pages/settings/slider.html" data-nav
                         class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
                         Slider
                     </a>
 
-                    <a href="../pages/settings/system-user.html" data-nav
+                    <a href="../../pages/settings/system-user.html" data-nav
                         class="block px-4 py-2 text-sm text-gray-600 rounded-lg hover:bg-[#EEF2FF] hover:text-gray-900 transition-colors">
                         System User
                     </a>
@@ -249,11 +249,11 @@
 
         </nav>
 
-        <!-- Logout Button at Bottom -->
+        <!--=== Logout Button at Bottom ===-->
         <form class="p-4 border-t border-gray-200  transition-all duration-300 flex-shrink-0" id="logout-container">
             <button
                 class="group w-full flex items-center gap-3 px-4 py-2.5 text-sm font-medium text-gray-700 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-50 hover:border-gray-300 hover:shadow-md transition-all duration-200">
-                <img src="../assets/svg/exit.svg" class="w-4 h-4 flex-shrink-0 text-gray-600  pointer-events-none">
+                <img src="../../assets/svg/exit.svg" class="w-4 h-4 flex-shrink-0 text-gray-600  pointer-events-none">
                 <span class="sidebar-text">Logout</span>
             </button>
         </form>
@@ -268,16 +268,14 @@
             <div class="col-span-1 max-w-2xl items-center flex ">
                 <button
                     class="lg:hidden toggle-sidebar p-2 text-gray-600 hover:bg-gray-50 rounded-lg transition-colors mr-4">
-                    <img src="../assets/svg/menu.svg" class="w-8 h-8 pointer-events-none">
+                    <img src="../../assets/svg/menu.svg" class="w-8 h-8 pointer-events-none">
                 </button>
-
-
             </div>
 
             <div class="col-span-1 flex items-center justify-end gap-2 md:gap-4 ml-4 md:ml-6">
                 <a href="#"
                     class="flex items-center justify-center gap-2 text-sm font-medium h-9 rounded-md px-3 relative cursor-pointer">
-                    <img src="../assets/svg/user.svg" class="w-4 h-4 mr-2">
+                    <img src="../../assets/svg/user.svg" class="w-4 h-4 mr-2">
                 </a>
 
                 <div class="flex items-center  border-l border-gray-300  cursor-pointer">
@@ -298,7 +296,7 @@
                                     class="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-200 group/item">
                                     <div
                                         class="flex items-center justify-center w-9 h-9 rounded-lg bg-green-500 text-white group-hover/item:scale-110 transition-transform">
-                                        <img src="../assets/svg/user-white.svg" class="w-5 h-5">
+                                        <img src="../../assets/svg/user-white.svg" class="w-5 h-5">
                                     </div>
                                     <span class="font-medium text-sm">Profile</span>
                                 </a>
@@ -307,7 +305,7 @@
                                     class="flex items-center gap-3 px-4 py-3 rounded-xl text-gray-700 hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-200 group/item">
                                     <div
                                         class="flex items-center justify-center w-9 h-9 rounded-lg bg-green-500 text-white group-hover/item:scale-110 transition-transform">
-                                        <img src="../assets/svg/setting-white.svg" class="w-5 h-5">
+                                        <img src="../../assets/svg/setting-white.svg" class="w-5 h-5">
 
                                     </div>
                                     <span class="font-medium text-sm">Settings</span>
@@ -321,7 +319,7 @@
                                     class="w-full flex items-center gap-3 px-4 py-3 rounded-xl text-red-600 hover:bg-gradient-to-r hover:from-red-50 hover:to-pink-50 transition-all duration-200 group/item">
                                     <div
                                         class="flex items-center justify-center w-9 h-9 rounded-lg bg-gradient-to-br from-red-100 to-red-200 text-red-600 group-hover/item:scale-110 transition-transform">
-                                        <img src="../assets/svg/exit-red.svg" class="w-5 h-5">
+                                        <img src="../../assets/svg/exit-red.svg" class="w-5 h-5">
                                     </div>
                                     <span class="font-semibold text-sm">Logout</span>
                                 </button>
@@ -332,7 +330,7 @@
                     <form action="#" method="POST" class="ml-2 hidden md:block">
                         <button type="submit"
                             class="group relative flex items-center gap-2 px-5 py-2.5 text-sm font-medium text-gray-700 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-50 hover:border-gray-300 hover:shadow-md transition-all duration-200">
-                            <img src="../assets/svg/exit.svg" class="w-4 h-4 ">
+                            <img src="../../assets/svg/exit.svg" class="w-4 h-4 ">
                             <span>Logout</span>
                         </button>
                     </form>
@@ -341,23 +339,26 @@
         </header>
 
         <!--================= Breadcrumb ==================-->
-        <div class="p-4 bg-gray-50 ">
+        <div class="p-3 bg-gray-50 ">
             <nav class="text-sm text-gray-500">
                 <ol class="list-reset flex">
                     <li>
-                        <a href="../index.html" class="text-blue-600 hover:text-blue-700 font-medium">Home</a>
+                        <a href="../../index.html" class="text-blue-600 hover:text-blue-700 font-medium">Home</a>
                     </li>
                     <li>
                         <span class="mx-2">/</span>
                     </li>
-                    <li class="text-gray-700">Events</li>
+                    <li class="text-gray-700">Doctors</li>
+                    <li>
+                        <span class="mx-2">/</span>
+                    </li>
+                    <li class="text-gray-700">New Vacancy</li>
                 </ol>
             </nav>
         </div>
 
         <!--================= Main content=== ===============-->
         <main class="flex-1 overflow-y-auto bg-gray-50 p-2">
-
             <!--============= Table ==============-->
             <div class="rounded-sm shadow-md border">
                 <div class="border-b border-gray-200">
@@ -365,58 +366,35 @@
                     <!--=========== Filter Form ============-->
                     <form class="p-2 border-b border-gray-200">
                         <div
-                            class="grid grid-cols-4  gap-3 xl:gap-0 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-3 border border-gray-200 shadow-sm">
+                            class="grid grid-cols-4 gap-3 xl:gap-0 bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-3  border border-gray-200 shadow-sm">
                             <div
-                                class="col-span-4 xl:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+                                class="col-span-4 xl:col-span-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-6  gap-4">
 
-                                <!--==== From Date Filter ====-->
+                                <!--==== Vacancy Number Filter ====-->
                                 <div>
                                     <label
                                         class="block text-xs font-semibold text-gray-700 mb-2 flex items-center gap-1.5">
-                                        <img src="../assets/svg/calendar-check.svg"
-                                            class="w-3.5 h-3.5 pointer-events-none" alt="">
-                                        From Date
+                                        <img src="../../assets/svg/file-digit.svg" class="w-3.5 h-3.5" alt="">
+                                        Vacancy No
+                                    </label>
+                                    <div class="relative">
+                                        <input type="text" placeholder="Search vacancy no..."
+                                            class="w-full px-4 py-2.5 text-sm text-gray-700 bg-white border-2 border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all shadow-sm hover:shadow-md placeholder-gray-400">
+
+                                    </div>
+                                </div>
+
+                                <!--==== Deadline Filter ====-->
+                                <div>
+                                    <label
+                                        class="block text-xs font-semibold text-gray-700 mb-2 flex items-center gap-1.5">
+                                        <img src="../../assets/svg/clock.svg" class="w-3.5 h-3.5" alt="">
+                                        Deadline
                                     </label>
                                     <div class="relative">
                                         <input type="date"
                                             class="w-full px-4 py-2.5 text-sm text-gray-700 bg-white border-2 border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all shadow-sm hover:shadow-md placeholder-gray-400">
-                                    </div>
-                                </div>
 
-                                <!--==== To Date Filter ====-->
-                                <div>
-                                    <label
-                                        class="block text-xs font-semibold text-gray-700 mb-2 flex items-center gap-1.5">
-                                        <img src="../assets/svg/calendar.svg" class="w-3.5 h-3.5 pointer-events-none"
-                                            alt="">
-                                        To Date
-                                    </label>
-                                    <div class="relative">
-                                        <input type="date"
-                                            class="w-full px-4 py-2.5 text-sm text-gray-700 bg-white border-2 border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all shadow-sm hover:shadow-md placeholder-gray-400">
-                                    </div>
-                                </div>
-
-                                <!--==== Event Type Filter ====-->
-                                <div>
-                                    <label
-                                        class="block text-xs font-semibold text-gray-700 mb-2 flex items-center gap-1.5">
-                                        <img src="../assets/svg/tag.svg" class="w-3.5 h-3.5 pointer-events-none" alt="">
-                                        Event Type
-                                    </label>
-                                    <div class="relative">
-                                        <select
-                                            class="w-full px-4 py-2.5 text-sm text-gray-700 bg-white border-2 border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all shadow-sm hover:shadow-md appearance-none cursor-pointer">
-                                            <option value="">All Types</option>
-                                            <option value="completed">Seminar</option>
-                                            <option value="pending">Workshop</option>
-                                            <option value="processing">Confrence</option>
-                                        </select>
-                                        <div
-                                            class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                                            <img src="../assets/svg/cheveron-down.svg"
-                                                class="w-4 h-4 pointer-events-none" alt="">
-                                        </div>
                                     </div>
                                 </div>
 
@@ -424,63 +402,30 @@
                                 <div class="flex items-end">
                                     <button
                                         class="w-full px-6 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg hover:from-blue-700 hover:to-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all duration-200 flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105 transform">
-                                        <img src="../assets/svg/white-magnifier.svg" class="w-4 h-4 pointer-events-none"
-                                            alt="">
+                                        <img src="../../assets/svg/white-magnifier.svg" class="w-4 h-4" alt="">
                                         Search
                                     </button>
                                 </div>
+
+
                             </div>
 
+                            <!--==== Action Buttons ====-->
                             <div class="col-span-4 xl:col-span-1  flex items-end ">
                                 <div class="flex gap-2">
                                     <button type="reset"
                                         class="text-sm text-gray-600 hover:text-gray-700 font-medium flex items-center gap-1.5 px-3 py-2 hover:bg-gray-200 rounded-lg transition-colors">
-                                        <img src="../assets/svg/setting-vertical.svg"
-                                            class="w-4 h-4 pointer-events-none" alt="">
-                                        Clear Filters
+                                        <img src="../../assets/svg/setting-vertical.svg" class="w-4 h-4" alt="">
+                                        Clear
                                     </button>
-                                    <button type="button" data-targetModalId="event-add-modal"
+
+                                    <button type="button" data-targetModalId="vacancy-add-modal"
                                         class="open-modal text-white font-semibold flex items-center gap-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors shadow-sm hover:shadow-md">
-                                        <img src="../assets/svg/plus-white.svg" class="w-4 h-4 pointer-events-none"
-                                            alt="">
-                                        Add Events
+                                        <img src="../../assets/svg/plus-white.svg" class="w-4 h-4" alt="">
+                                        Add Vacancy
                                     </button>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="mt-4 flex flex-wrap items-center gap-2">
-                            <span class="text-sm font-semibold text-gray-700">Advanced Filters:</span>
-
-                            <button type="button"
-                                class="px-3 py-1.5 bg-blue-600 text-white text-sm rounded-lg hover:bg-blue-700 transition-colors">
-                                Upcoming
-                            </button>
-
-                            <button type="button"
-                                class="px-3 py-1.5 bg-gray-200 text-gray-700 text-sm rounded-lg hover:bg-gray-300 transition-colors">
-                                Past
-                            </button>
-
-                            <button type="button"
-                                class="px-3 py-1.5 bg-gray-200 text-gray-700 text-sm rounded-lg hover:bg-gray-300 transition-colors">
-                                Seminar
-                            </button>
-
-                            <button type="button"
-                                class="px-3 py-1.5 bg-gray-200 text-gray-700 text-sm rounded-lg hover:bg-gray-300 transition-colors">
-                                Workshop
-                            </button>
-
-                            <button type="button"
-                                class="px-3 py-1.5 bg-gray-200 text-gray-700 text-sm rounded-lg hover:bg-gray-300 transition-colors">
-                                Online
-                            </button>
-
-                            <button type="button"
-                                class="px-3 py-1.5 bg-gray-200 text-gray-700 text-sm rounded-lg hover:bg-gray-300 transition-colors">
-                                Health Camp
-                            </button>
                         </div>
                     </form>
                 </div>
@@ -490,187 +435,100 @@
                         <thead>
                             <tr class="border-b transition-colors ">
                                 <th class="h-12 px-4 text-left font-semibold">S.N</th>
-                                <th class="h-12 px-4 text-left font-semibold">Event Name</th>
-                                <th class="h-12 px-4 text-left font-semibold">Event Type</th>
-                                <th class="h-12 px-4 text-left font-semibold">Event At</th>
-                                <th class="h-12 px-4 text-left font-semibold">Organizer</th>
-                                <th class="h-12 px-4 text-left font-semibold">Location</th>
+                                <th class="h-12 px-4 text-left font-semibold">Vacancy No</th>
+                                <th class="h-12 px-4 text-left font-semibold">Position</th>
+                                <th class="h-12 px-4 text-left font-semibold">Requirement</th>
+                                <th class="h-12 px-4 text-left font-semibold">Experience</th>
+                                <th class="h-12 px-4 text-left font-semibold">Description</th>
+                                <th class="h-12 px-4 text-left font-semibold">Deadline</th>
+                                <th class="h-12 px-4 text-left font-semibold">Created At</th>
+                                <th class="h-12 px-4 text-left font-semibold">Created By</th>
+                                <th class="h-12 px-4 text-left font-semibold">Status</th>
                                 <th class="h-12 px-4 text-left font-semibold">Action</th>
                             </tr>
                         </thead>
                         <tbody>
-
-                            <!--====== row 1===== -->
+                            <!-- ====== Row 1 ====== -->
                             <tr class="border-b">
-                                <td class="p-4">
-                                    <div class="text-xs">1</div>
+                                <td class="p-4 text-xs">1</td>
+                                <td class="p-4 font-medium">HC-VAC-001</td>
+                                <td class="p-4">Staff Nurse</td>
+                                <td class="p-4">5 Positions</td>
+                                <td class="p-4">1–3 Years</td>
+                                <td class="p-4">Patient care, medication administration</td>
+                                <td class="p-4 text-sm">2026-02-15</td>
+                                <td class="p-4 text-sm">2026-01-01</td>
+                                <td class="p-4">HR Department</td>
+                                <td class="p-4 ">
+                                    <span
+                                        class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-800">
+                                        <span class="h-1.5 w-1.5 rounded-full mr-2 bg-green-600"></span>
+                                        Open
+                                    </span>
                                 </td>
-                                <td class="p-4 flex items-center space-x-2">
-                                    Annual Cardiology Seminar
-                                </td>
-
-                                <td class="p-4">Seminar</td>
-                                <td class="p-4">2026-01-15 10:00 AM</td>
-                                <td class="p-4">No one</td>
-                                <td class="p-4">Main Hospital Auditorium</td>
                                 <td class="p-4 flex items-center space-x-1">
-                                    <div class="flex items-center justify-start space-x-1">
-                                        <button
-                                            class="flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium  rounded-md h-4 w-4 p-0">
-                                            <img src="../assets/svg/pencil.svg" class="w-4 h-4 pointer-events-none"
-                                                alt="">
-                                        </button>
-
-                                        <button
-                                            class="flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium  rounded-md h-4 w-4 p-0">
-                                            <img src="../assets/svg/bin.svg" class="w-4 h-4 pointer-events-none" alt="">
-                                        </button>
-                                    </div>
+                                    <button class="flex items-center justify-center h-6 w-6 p-0">
+                                        <img src="../../assets/svg/pencil.svg" alt="Edit">
+                                    </button>
+                                    <button class="flex items-center justify-center h-6 w-6 p-0">
+                                        <img src="../../assets/svg/bin.svg" alt="Delete">
+                                    </button>
                                 </td>
                             </tr>
 
-                            <!--====== row 2 ===== -->
+                            <!-- ====== Row 2 ====== -->
                             <tr class="border-b">
-                                <td class="p-4">
-                                    <div class="text-xs">1</div>
+                                <td class="p-4 text-xs">2</td>
+                                <td class="p-4 font-medium">HC-VAC-002</td>
+                                <td class="p-4">Lab Technician</td>
+                                <td class="p-4">2 Positions</td>
+                                <td class="p-4">2–4 Years</td>
+                                <td class="p-4">Sample collection and laboratory testing</td>
+                                <td class="p-4 text-sm">2026-03-01</td>
+                                <td class="p-4 text-sm">2026-01-05</td>
+                                <td class="p-4">Admin</td>
+                                <td class="p-4 ">
+                                    <span
+                                        class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
+                                        <span class="h-1.5 w-1.5 rounded-full mr-2 bg-yellow-600"></span>
+                                        On Hold
+                                    </span>
                                 </td>
-                                <td class="p-4 flex items-center space-x-2">
-                                    Annual Cardiology Seminar
-                                </td>
-
-                                <td class="p-4">Seminar</td>
-                                <td class="p-4">2026-01-15 10:00 AM</td>
-                                <td class="p-4">No one</td>
-                                <td class="p-4">Main Hospital Auditorium</td>
                                 <td class="p-4 flex items-center space-x-1">
-                                    <div class="flex items-center justify-start space-x-1">
-                                        <button
-                                            class="flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium  rounded-md h-4 w-4 p-0">
-                                            <img src="../assets/svg/pencil.svg" class="w-4 h-4 pointer-events-none"
-                                                alt="">
-                                        </button>
-
-                                        <button
-                                            class="flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium  rounded-md h-4 w-4 p-0">
-                                            <img src="../assets/svg/bin.svg" class="w-4 h-4 pointer-events-none" alt="">
-                                        </button>
-                                    </div>
+                                    <button class="flex items-center justify-center h-6 w-6 p-0">
+                                        <img src="../../assets/svg/pencil.svg" alt="Edit">
+                                    </button>
+                                    <button class="flex items-center justify-center h-6 w-6 p-0">
+                                        <img src="../../assets/svg/bin.svg" alt="Delete">
+                                    </button>
                                 </td>
                             </tr>
 
-                            <!--====== row 3 ===== -->
+                            <!-- ====== Row 3 ====== -->
                             <tr class="border-b">
-                                <td class="p-4">
-                                    <div class="text-xs">1</div>
+                                <td class="p-4 text-xs">3</td>
+                                <td class="p-4 font-medium">HC-VAC-003</td>
+                                <td class="p-4">Pharmacist</td>
+                                <td class="p-4">1 Position</td>
+                                <td class="p-4">3–5 Years</td>
+                                <td class="p-4">Dispensing medicines and inventory control</td>
+                                <td class="p-4 text-sm">2026-02-28</td>
+                                <td class="p-4 text-sm">2026-01-10</td>
+                                <td class="p-4">HR Department</td>
+                                <td class="p-4 ">
+                                    <span
+                                        class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-red-100 text-red-800">
+                                        <span class="h-1.5 w-1.5 rounded-full mr-2 bg-red-600"></span>
+                                        Closed
+                                    </span>
                                 </td>
-                                <td class="p-4 flex items-center space-x-2">
-                                    Annual Cardiology Seminar
-                                </td>
-
-                                <td class="p-4">Seminar</td>
-                                <td class="p-4">2026-01-15 10:00 AM</td>
-                                <td class="p-4">No one</td>
-                                <td class="p-4">Main Hospital Auditorium</td>
                                 <td class="p-4 flex items-center space-x-1">
-                                    <div class="flex items-center justify-start space-x-1">
-                                        <button
-                                            class="flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium  rounded-md h-4 w-4 p-0">
-                                            <img src="../assets/svg/pencil.svg" class="w-4 h-4 pointer-events-none"
-                                                alt="">
-                                        </button>
-
-                                        <button
-                                            class="flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium  rounded-md h-4 w-4 p-0">
-                                            <img src="../assets/svg/bin.svg" class="w-4 h-4 pointer-events-none" alt="">
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <!--====== row 4 ===== -->
-                            <tr class="border-b">
-                                <td class="p-4">
-                                    <div class="text-xs">1</div>
-                                </td>
-                                <td class="p-4 flex items-center space-x-2">
-                                    Annual Cardiology Seminar
-                                </td>
-
-                                <td class="p-4">Seminar</td>
-                                <td class="p-4">2026-01-15 10:00 AM</td>
-                                <td class="p-4">No one</td>
-                                <td class="p-4">Main Hospital Auditorium</td>
-                                <td class="p-4 flex items-center space-x-1">
-                                    <div class="flex items-center justify-start space-x-1">
-                                        <button
-                                            class="flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium  rounded-md h-4 w-4 p-0">
-                                            <img src="../assets/svg/pencil.svg" class="w-4 h-4 pointer-events-none"
-                                                alt="">
-                                        </button>
-
-                                        <button
-                                            class="flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium  rounded-md h-4 w-4 p-0">
-                                            <img src="../assets/svg/bin.svg" class="w-4 h-4 pointer-events-none" alt="">
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <!--====== row 5 ===== -->
-                            <tr class="border-b">
-                                <td class="p-4">
-                                    <div class="text-xs">1</div>
-                                </td>
-                                <td class="p-4 flex items-center space-x-2">
-                                    Annual Cardiology Seminar
-                                </td>
-
-                                <td class="p-4">Seminar</td>
-                                <td class="p-4">2026-01-15 10:00 AM</td>
-                                <td class="p-4">No one</td>
-                                <td class="p-4">Main Hospital Auditorium</td>
-                                <td class="p-4 flex items-center space-x-1">
-                                    <div class="flex items-center justify-start space-x-1">
-                                        <button
-                                            class="flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium  rounded-md h-4 w-4 p-0">
-                                            <img src="../assets/svg/pencil.svg" class="w-4 h-4 pointer-events-none"
-                                                alt="">
-                                        </button>
-
-                                        <button
-                                            class="flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium  rounded-md h-4 w-4 p-0">
-                                            <img src="../assets/svg/bin.svg" class="w-4 h-4 pointer-events-none" alt="">
-                                        </button>
-                                    </div>
-                                </td>
-                            </tr>
-
-                            <!--====== row 6 ===== -->
-                            <tr class="border-b">
-                                <td class="p-4">
-                                    <div class="text-xs">1</div>
-                                </td>
-                                <td class="p-4 flex items-center space-x-2">
-                                    Annual Cardiology Seminar
-                                </td>
-
-                                <td class="p-4">Seminar</td>
-                                <td class="p-4">2026-01-15 10:00 AM</td>
-                                <td class="p-4">No one</td>
-                                <td class="p-4">Main Hospital Auditorium</td>
-                                <td class="p-4 flex items-center space-x-1">
-                                    <div class="flex items-center justify-start space-x-1">
-                                        <button
-                                            class="flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium  rounded-md h-4 w-4 p-0">
-                                            <img src="../assets/svg/pencil.svg" class="w-4 h-4 pointer-events-none"
-                                                alt="">
-                                        </button>
-
-                                        <button
-                                            class="flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium  rounded-md h-4 w-4 p-0">
-                                            <img src="../assets/svg/bin.svg" class="w-4 h-4 pointer-events-none" alt="">
-                                        </button>
-                                    </div>
+                                    <button class="flex items-center justify-center h-6 w-6 p-0">
+                                        <img src="../../assets/svg/pencil.svg" alt="Edit">
+                                    </button>
+                                    <button class="flex items-center justify-center h-6 w-6 p-0">
+                                        <img src="../../assets/svg/bin.svg" alt="Delete">
+                                    </button>
                                 </td>
                             </tr>
                         </tbody>
@@ -689,7 +547,7 @@
 
                             <button type="button"
                                 class="group relative flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-50 hover:border-gray-300 hover:shadow-md transition-all duration-200">
-                                <img src="../assets/svg/cheveron-left.svg" class="h-4 w-4 pointer-events-none" alt="">
+                                <img src="../../assets/svg/cheveron-left.svg" class="w-4 h-4" alt="">
                                 <span>Previous</span>
                             </button>
 
@@ -709,129 +567,140 @@
                                 class="group relative flex items-center gap-2 px-3 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-50 hover:border-gray-300 hover:shadow-md transition-all duration-200">
 
                                 <span>Next</span>
-                                <img src="../assets/svg/cheveron-right.svg" class="h-4 w-4 pointer-events-none" alt="">
+                                <img src="../../assets/svg/cheveron-right.svg" class="w-4 h-4" alt="">
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
 
-
-
         </main>
     </div>
 
+
     <!-- =================== Add Modal =======================-->
     <div>
-        <div id="event-add-modal"
+        <div id="vacancy-add-modal"
             class="hidden fixed top-0 left-0 right-0 z-99 px-4 pt-8 overflow-y-auto h-screen flex  items-center justify-center">
-            <div class="w-[30%] flex flex-col max-h-[90%] mx-auto bg-white rounded-3xl shadow-lg overflow-hidden">
+            <div
+                class="w-[95%] lg:w-[30%] flex flex-col max-h-[90%] mx-auto bg-white rounded-3xl shadow-lg overflow-hidden">
 
                 <!-- ============ Modal Header =========== -->
                 <div class="p-5 border-b border-gray-100 h-[10%]">
                     <div class="flex items-center justify-between">
                         <div>
-                            <h2 class="text-2xl font-bold text-gray-900">Add new Event</h2>
+                            <h2 class="text-2xl font-bold text-gray-900">Add New Vacancy</h2>
                             <p class="text-sm text-gray-500 mt-1">Fill in the details below</p>
                         </div>
-                        <button type="button" data-targetModalId="event-add-modal"
+                        <button type="button" data-targetModalId="vacancy-add-modal"
                             class="close-modal h-10 flex items-center justify-center rounded-full  text-gray-400 hover:text-black transition-all duration-200">
-                            <img src="../assets/svg/cross.svg" class="h-5 w-5 pointer-events-none" alt="">
+                            <img src="../../assets/svg/cross.svg" class="w-5 h-5 pointer-events-none" alt="">
                         </button>
                     </div>
                 </div>
 
                 <!-- ======== Modal Body ======== -->
                 <div class="px-8 py-6 overflow-y-auto h-[90%]">
-                    <form id="dataForm" onsubmit="saveData(event)">
-                        <div class="grid grid-cols-2 gap-5 mb-5">
+                    <form id="dataForm">
+                        <div class="grid grid-cols-2 mb-5 gap-3">
 
-                            <!--====== Event Name ======-->
-                            <div>
+                            <!--====== Position Field ======-->
+                            <div class="col-span-2 md:col-span-1">
                                 <label class="block text-xs font-semibold text-gray-700 mb-2 flex items-center gap-1.5">
-                                    <img src="../assets/svg/book-type.svg" class="w-3.5 h-3.5 pointer-events-none"
-                                        alt="">
-                                    Event Name
+                                    <img src="../../assets/svg/stethoscope.svg" class="w-3.5 h-3.5" alt="">
+                                    Position
                                 </label>
                                 <div class="relative">
-                                    <input type="text" placeholder="Enter Name..."
+                                    <input type="text" placeholder="Enter position..."
                                         class="w-full px-4 py-2.5 text-sm text-gray-700 bg-white border-2 border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all shadow-sm hover:shadow-md placeholder-gray-400">
                                 </div>
                             </div>
 
-                            <!--==== Event Type ====-->
-                            <div>
+                            <!--====== Requirement Field ======-->
+                            <div class="col-span-2 md:col-span-1">
                                 <label class="block text-xs font-semibold text-gray-700 mb-2 flex items-center gap-1.5">
-                                    <img src="../assets/svg/tag.svg" class="w-3.5 h-3.5 pointer-events-none" alt="">
-                                    Event Type
+                                    <img src="../../assets/svg/user.svg" class="w-3.5 h-3.5" alt="">
+                                    Requirement
+                                </label>
+                                <div class="relative">
+                                    <input type="text" placeholder="Enter requirement..."
+                                        class="w-full px-4 py-2.5 text-sm text-gray-700 bg-white border-2 border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all shadow-sm hover:shadow-md placeholder-gray-400">
+                                </div>
+                            </div>
+
+                            <!--====== Experince Field ======-->
+                            <div class="col-span-2 md:col-span-1">
+                                <label class="block text-xs font-semibold text-gray-700 mb-2 flex items-center gap-1.5">
+                                    <img src="../../assets/svg/trophy.svg" class="w-3.5 h-3.5" alt="">
+                                    Experience
+                                </label>
+                                <div class="relative">
+                                    <input type="text" placeholder="Enter Experience..."
+                                        class="w-full px-4 py-2.5 text-sm text-gray-700 bg-white border-2 border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all shadow-sm hover:shadow-md placeholder-gray-400">
+                                </div>
+                            </div>
+
+                            <!--====== Deadline Field ======-->
+                            <div class="col-span-2 md:col-span-1">
+                                <label class="block text-xs font-semibold text-gray-700 mb-2 flex items-center gap-1.5">
+                                    <img src="../../assets/svg/calendar-check.svg" class="w-3.5 h-3.5" alt="">
+                                    Deadline
+                                </label>
+                                <div class="relative">
+                                    <input type="date"
+                                        class="w-full px-4 py-2.5 text-sm text-gray-700 bg-white border-2 border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all shadow-sm hover:shadow-md placeholder-gray-400">
+                                </div>
+                            </div>
+
+                            <!--====== Status Field ======-->
+                            <div class="col-span-2 md:col-span-1">
+                                <label class="block text-xs font-semibold text-gray-700 mb-2 flex items-center gap-1.5">
+                                    <img src="../../assets/svg/tag.svg" class="w-3.5 h-3.5 pointer-events-none" alt="">
+                                    Status
                                 </label>
                                 <div class="relative">
                                     <select
                                         class="w-full px-4 py-2.5 text-sm text-gray-700 bg-white border-2 border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all shadow-sm hover:shadow-md appearance-none cursor-pointer">
-                                        <option value="">All Types</option>
-                                        <option value="completed">Seminar</option>
-                                        <option value="pending">Workshop</option>
-                                        <option value="processing">Confrence</option>
+                                        <option value="completed">Open</option>
+                                        <option value="pending">Closed</option>
+                                        <option value="processing">On Hold</option>
                                     </select>
                                     <div class="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
-                                        <img src="../assets/svg/cheveron-down.svg" class="w-4 h-4 pointer-events-none"
-                                            alt="">
+                                        <img src="../../assets/svg/cheveron-down.svg"
+                                            class="w-4 h-4 pointer-events-none" alt="">
                                     </div>
                                 </div>
                             </div>
 
-
-                            <!--====== Event At ======-->
-                            <div>
+                            <!--====== Description Field ======-->
+                            <div class="col-span-2">
                                 <label class="block text-xs font-semibold text-gray-700 mb-2 flex items-center gap-1.5">
-                                    <img src="../assets/svg/clock.svg" class="w-3.5 h-3.5 pointer-events-none" alt="">
-                                    Event At
+                                    <img src="../../assets/svg/file-text.svg" class="w-3.5  h-3.5 pointer-events-none"
+                                        alt="">
+                                    Description
                                 </label>
                                 <div class="relative">
-                                    <input type="date" placeholder="Enter Name..."
-                                        class="w-full px-4 py-2.5 text-sm text-gray-700 bg-white border-2 border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all shadow-sm hover:shadow-md placeholder-gray-400">
+                                    <textarea placeholder="Enter Description..."
+                                        class="w-full px-4 py-3.5 text-sm text-gray-700 bg-white border-2 border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all shadow-sm hover:shadow-md placeholder-gray-400"></textarea>
                                 </div>
                             </div>
 
-
-                            <!--====== Organizer Field ======-->
-                            <div>
-                                <label class="block text-xs font-semibold text-gray-700 mb-2 flex items-center gap-1.5">
-                                    <img src="../assets/svg/user.svg" class="w-3.5 h-3.5 pointer-events-none" alt="">
-                                    Organizer
-                                </label>
-                                <div class="relative">
-                                    <input type="text" placeholder="Enter Name..."
-                                        class="w-full px-4 py-2.5 text-sm text-gray-700 bg-white border-2 border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all shadow-sm hover:shadow-md placeholder-gray-400">
-                                </div>
-                            </div>
-
-                            <!--====== Location Field ======-->
-                            <div>
-                                <label class="block text-xs font-semibold text-gray-700 mb-2 flex items-center gap-1.5">
-                                    <img src="../assets/svg/map-pin.svg" class="w-3.5 h-3.5 pointer-events-none" alt="">
-                                    Location
-                                </label>
-                                <div class="relative">
-                                    <input type="text" placeholder="Enter Location..."
-                                        class="w-full px-4 py-2.5 text-sm text-gray-700 bg-white border-2 border-gray-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all shadow-sm hover:shadow-md placeholder-gray-400">
-                                </div>
-                            </div>
 
                         </div>
 
                         <!--=== Action Buttons ===-->
                         <div class="flex gap-3 pt-2">
-                            <button type="button" data-targetModalId="event-add-modal"
-                                class="close-modal  relative flex items-center gap-2 px-5 py-2.5 text-sm font-medium text-gray-700 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-50 hover:border-gray-300 hover:shadow-md hover:-translate-y-1 transition-all duration-200">
-                                <img src="../assets/svg/corner-up-left.svg" class="w-4 h-4 pointer-events-none" alt="">
+                            <button type="button" data-targetModalId="vacancy-add-modal"
+                                class="close-modal group relative flex items-center gap-2 px-5 py-2.5 text-sm font-medium text-gray-700 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-50 hover:border-gray-300 hover:shadow-md hover:-translate-y-1 transition-all duration-200">
+                                <img src="../../assets/svg/corner-up-left.svg" class="w-4 h-4 pointer-events-none"
+                                    alt="">
                                 <span class="pointer-events-none">Cancel</span>
                             </button>
 
                             <button type="submit"
                                 class="flex-1 group relative flex items-center gap-2 px-5 py-2.5 text-md font-medium text-white bg-blue-500 border border-gray-200 rounded-lg shadow-sm hover:bg-blue-700 hover:border-gray-300 hover:shadow-md hover:-translate-y-1  transition-all duration-200">
-                                <img src="../assets/svg/white-save.svg" class="w-4 h-4 pointer-events-none" alt="">
-                                <span class="pointer-events-none">Save</span>
+                                <img src="../../assets/svg/white-save.svg" class="w-3.5 h-3.5" alt="">
+                                <span>Save</span>
                             </button>
                         </div>
                     </form>
@@ -840,9 +709,8 @@
         </div>
     </div>
 
-
     <!-- ==================== Loader =================== -->
-    <div id="loader" class="loader fixed inset-0 z-50 flex items-center justify-center bg-white/60">
+    <div id="loader" class="hidden loader fixed inset-0 z-50 flex items-center justify-center bg-white/60">
         <div class="relative flex flex-col items-center gap-8">
 
             <!--=== Animated Dots ===-->
@@ -866,8 +734,7 @@
         </div>
     </div>
 
-    <script src="../js/app.js"></script>
-
+    <script src="../../js/app.js"></script>
 </body>
 
 </html>
